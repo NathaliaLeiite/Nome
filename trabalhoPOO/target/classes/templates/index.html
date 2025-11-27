@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Social Literária</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+        }
+        .btn-primary {
+            background-color: #3498db;
+            color: white;
+        }
+        .btn-primary:hover { background-color: #2980b9; }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid #3498db;
+            color: #3498db;
+        }
+        .btn-outline:hover { background-color: #eaf6fd; }
+        
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 BookSocial</h1>
+        <p>Conecte-se com leitores, avalie livros e encontre sua próxima leitura favorita.</p>
+        
+        <a href="/usuarios" class="btn btn-primary">Ver Usuários (JSON)</a>
+        <a href="/swagger-ui/index.html" class="btn btn-outline">Documentação (Swagger)</a>
+        
+        <div class="footer">
+            Desenvolvido para trabalho de POO - UFG
+        </div>
+    </div>
+
+</body>
+</html>
