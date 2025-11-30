@@ -1,4 +1,14 @@
 services:
   database:
     image: postgres:17
-    container_name:
+    container_name: arcadia_database
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: arcadia
+      POSTGRES_DB: arcadia
+    volumes:
+      - postgres:/data/postgres
+volumes:
+  postgres:
